@@ -131,51 +131,98 @@
         gap: 2rem;
       }
 
-      .contact-form {
+      #contact {
+        padding: 4rem 0;
+        background: linear-gradient(
+          45deg,
+          #0a0a0a,
+          #1a1a1a
+        ); /* Changed background color */
+      }
+
+      .contact-links {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        max-width: 600px;
-        margin: 0 auto;
-        opacity: 1;
-        transform: translateY(30px);
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
       }
 
-      .contact-form input,
-      .contact-form textarea {
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        color: #ffffff;
-        font-size: 1rem;
-      }
-
-      .contact-form input::placeholder,
-      .contact-form textarea::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-      }
-
-      .contact-form button {
-        padding: 1rem 2rem;
-        background: #64ffda;
+      .contact-link button {
+        background-color: #64ffda;
         color: #0a0a0a;
         border: none;
         border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
         cursor: pointer;
-        transition: all 0.3s;
+        transition: transform 0.3s, box-shadow 0.3s;
         font-weight: bold;
-        font-size: 1.1rem;
       }
 
-      .contact-form button:hover {
-        transform: translateY(-2px);
+      .contact-link button:hover {
+        transform: translateY(-4px);
         box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
       }
+
+      .contact-link button:focus {
+        outline: none;
+      }
+
+      .section-title {
+        text-align: center;
+        color: #0a0a0a;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+      }
+
+      .section-title {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+      }
+
+      .container {
+        text-align: center;
+      }
+
       a {
         text-decoration: none;
         color: aqua;
       }
+      .skills-grid {
+        display: flex;
+
+        gap: 2rem;
+      }
+
+      .skill-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        opacity: 1;
+        transform: translateY(30px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .skill-card h3 {
+        color: #64ffda;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .skill-card ul {
+        list-style-type: none;
+      }
+
+      .skill-card ul li {
+        color: #ffffff;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
       @media (max-width: 768px) {
         .hero-content h1 {
           font-size: 3rem;
@@ -212,20 +259,23 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">About Me</h2>
-        <div>
-          <img
-            src="https://aarya1302.github.io/static/images/grad.JPG"
-            alt="Aarya Bhorra"
-          />
-        </div>
-        <div class="experience-item">
-          <p>
-            I am a dedicated and detail-oriented Computer Science and Cyber
-            Security student graduating in December 2024 from the University of
-            Western Australia. With a strong foundation in programming,
-            cybersecurity, and cloud technologies, I aim to solve complex
-            problems and contribute to impactful projects.
-          </p>
+        <div class="about-content">
+          <div class="profile-image">
+            <img
+              src="https://aarya1302.github.io/static/images/grad.JPG"
+              alt="Aarya Bhorra"
+              style="max-width: 500px; height: 400px"
+            />
+          </div>
+          <div class="experience-item">
+            <p>
+              I am a dedicated and detail-oriented Computer Science and Cyber
+              Security student graduating in December 2024 from the University
+              of Western Australia. With a strong foundation in programming,
+              cybersecurity, and cloud technologies, I aim to solve complex
+              problems and contribute to impactful projects.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -323,18 +373,76 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="skills">
       <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React</li>
+              <li>MongoDB</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Cybersecurity</h3>
+            <ul>
+              <li>Azure Sentinel</li>
+              <li>Ethical Hacking</li>
+              <li>Penetration Testing</li>
+              <li>Threat Intelligence</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud Computing</h3>
+            <ul>
+              <li>AWS</li>
+              <li>Azure</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/aarya-bhorra-2a2b4b6a"
+            target="_blank"
+            class="contact-link"
+          >
+            <button>LinkedIn</button>
+          </a>
+          <a
+            href="https://github.com/aarya1302"
+            target="_blank"
+            class="contact-link"
+          >
+            <button>GitHub</button>
+          </a>
+          <a href="tel:0413661488" class="contact-link">
+            <button>0413661488</button>
+          </a>
+          <a href="mailto:aaryabhorra130502@gmail.com" class="contact-link">
+            <button>aaryabhorra130502@gmail.com</button>
+          </a>
+        </div>
+      </div>
+    </section>
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
