@@ -1,171 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental Load App Project</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
 
-        body {
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
+      body {
+        background-color: #0a0a0a;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
 
-        .project-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+      .project-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
 
-        .project-header h1 {
-            font-size: 3rem;
-            color: #64ffda;
-        }
+      .project-header h1 {
+        font-size: 3rem;
+        color: #64ffda;
+      }
 
-        .project-header p {
-            font-size: 1.2rem;
-            color: #ffffff;
-        }
+      .project-header p {
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
 
-        .section {
-            margin-bottom: 2rem;
-        }
+      .section {
+        margin-bottom: 2rem;
+      }
 
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #64ffda;
-            border-bottom: 2px solid #64ffda;
-            display: inline-block;
-        }
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #64ffda;
+        border-bottom: 2px solid #64ffda;
+        display: inline-block;
+      }
 
-        .section-content {
-            margin-top: 1rem;
-        }
+      .section-content {
+        margin-top: 1rem;
+      }
 
-        .section-content p {
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
+      .section-content p {
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
 
-        .technologies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
 
-        .technology-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            color: #ffffff;
-            font-weight: 500;
-        }
+      .technology-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 500;
+      }
 
-        .screenshot {
-            margin: 1rem 0;
-            text-align: center;
-        }
+      .screenshot {
+        margin: 1rem 0;
+        text-align: center;
+      }
 
-        .screenshot img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #64ffda;
-            border-radius: 10px;
-        }
+      .screenshot img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #64ffda;
+        border-radius: 10px;
+      }
 
-        .contact-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            background: #64ffda;
-            color: #0a0a0a;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
+      .contact-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem;
+        background: #64ffda;
+        color: #0a0a0a;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
 
-        .contact-link:hover {
-            background: #52e0c5;
-        }
-
+      .contact-link:hover {
+        background: #52e0c5;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="project-header">
-            <h1>Mental Load Application</h1>
-            <p>Helping users reflect on and manage their mental load with Firebase, React Native Expo, and Qualtrics Integration.</p>
-        </header>
+      <header class="project-header">
+        <h1>Mental Load Application</h1>
+        <p>
+          Helping users reflect on and manage their mental load with Firebase,
+          React Native Expo, and Qualtrics Integration.
+        </p>
+      </header>
 
-        <section class="section">
-            <h2 class="section-title">Overview</h2>
-            <div class="section-content">
-                <p>The Mental Load app helps users assess and reflect on their mental labor. Key features include secure user authentication, interactive surveys, a visually appealing user interface, and real-time updates. The app combines Firebase for backend functionality, React Native Expo for cross-platform development, and Qualtrics for embedding custom surveys.</p>
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Overview</h2>
+        <div class="section-content">
+          <p>
+            The Mental Load app helps users assess and reflect on their mental
+            labor. Key features include secure user authentication, interactive
+            surveys, a visually appealing user interface, and real-time updates.
+            The app combines Firebase for backend functionality, React Native
+            Expo for cross-platform development, and Qualtrics for embedding
+            custom surveys.
+          </p>
+        </div>
+      </section>
 
-        <section class="section">
-            <h2 class="section-title">Key Features</h2>
-            <div class="section-content">
-                <p><strong>Firebase Integration:</strong> Secure user authentication and real-time database management for dynamic updates.</p>
-                <p><strong>React Native Expo:</strong> Cross-platform mobile development with a focus on clean and user-friendly design.</p>
-                <p><strong>Qualtrics Surveys:</strong> Embedded reflective surveys to help users better understand their mental workload.</p>
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Key Features</h2>
+        <div class="section-content">
+          <p>
+            <strong>Firebase Integration:</strong> Secure user authentication
+            and real-time database management for dynamic updates.
+          </p>
+          <p>
+            <strong>React Native Expo:</strong> Cross-platform mobile
+            development with a focus on clean and user-friendly design.
+          </p>
+          <p>
+            <strong>Qualtrics Surveys:</strong> Embedded reflective surveys to
+            help users better understand their mental workload.
+          </p>
+        </div>
+      </section>
 
-        <section class="section">
-            <h2 class="section-title">Screenshots</h2>
-            <div class="screenshot">
-                <img src="screenshot1.png" alt="Mental Load App Screenshot">
-            </div>
-            <div class="screenshot">
-                <img src="screenshot2.png" alt="Mental Load App Screenshot">
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Screenshots</h2>
+        <div class="screenshot">
+          <img
+            src="static/images/ml/checkin_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img
+            src="static/images/ml/checkin_survey_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img
+            src="static/images/ml/home_screen_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img
+            src="static/images/ml/dashboard_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img src="static/images/ml/images_survey_ml.png alt="Mental Load App
+          Screenshot">
+        </div>
+        <div class="screenshot">
+          <img
+            src="static/images/ml/signUp_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+      </section>
 
-        <section class="section">
-            <h2 class="section-title">Technologies Used</h2>
-            <div class="technologies">
-                <div class="technology-item">React Native Expo</div>
-                <div class="technology-item">Firebase</div>
-                <div class="technology-item">Qualtrics</div>
-                <div class="technology-item">JavaScript</div>
-                <div class="technology-item">API Integration</div>
-                <div class="technology-item">Cross-Platform Development</div>
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="technologies">
+          <div class="technology-item">React Native Expo</div>
+          <div class="technology-item">Firebase</div>
+          <div class="technology-item">Qualtrics</div>
+          <div class="technology-item">JavaScript</div>
+          <div class="technology-item">API Integration</div>
+          <div class="technology-item">Cross-Platform Development</div>
+        </div>
+      </section>
 
-        <section class="section">
-            <h2 class="section-title">Challenges and Solutions</h2>
-            <div class="section-content">
-                <p><strong>Dynamic Survey Integration:</strong> Used React Native's WebView component and Firebase functions to fetch survey links dynamically, ensuring a seamless user experience.</p>
-                <p><strong>Cross-Platform Compatibility:</strong> Thorough testing and adjustments ensured smooth performance on both iOS and Android devices.</p>
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Challenges and Solutions</h2>
+        <div class="section-content">
+          <p>
+            <strong>Dynamic Survey Integration:</strong> Used React Native's
+            WebView component and Firebase functions to fetch survey links
+            dynamically, ensuring a seamless user experience.
+          </p>
+          <p>
+            <strong>Cross-Platform Compatibility:</strong> Thorough testing and
+            adjustments ensured smooth performance on both iOS and Android
+            devices.
+          </p>
+        </div>
+      </section>
 
-        <section class="section">
-            <h2 class="section-title">Conclusion</h2>
-            <div class="section-content">
-                <p>The Mental Load app is a meaningful project that showcases my skills in full-stack development, third-party tool integration, and user-centric design. It helps users reflect on and manage their mental labor effectively.</p>
-                <a href="https://github.com/aarya1302" class="contact-link" target="_blank">View on GitHub</a>
-            </div>
-        </section>
+      <section class="section">
+        <h2 class="section-title">Conclusion</h2>
+        <div class="section-content">
+          <p>
+            The Mental Load app is a meaningful project that showcases my skills
+            in full-stack development, third-party tool integration, and
+            user-centric design. It helps users reflect on and manage their
+            mental labor effectively.
+          </p>
+          <a
+            href="https://github.com/aarya1302"
+            class="contact-link"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
-
