@@ -8,12 +8,42 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 1.5rem;
+        background-color: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: #64ffda;
       }
 
       body {
@@ -25,7 +55,7 @@
       .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 5rem;
       }
 
       .project-header {
@@ -79,12 +109,12 @@
       }
 
       .screenshot {
-        margin: 1rem 0;
+        margin: 1rem;
         text-align: center;
       }
 
       .screenshot img {
-        max-width: 50%;
+        width: 200px;
         height: auto;
         border: 2px solid #64ffda;
         border-radius: 10px;
@@ -105,9 +135,24 @@
       .contact-link:hover {
         background: #52e0c5;
       }
+      .screenshot-section {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
     </style>
+    >
   </head>
   <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="https://aarya1302.github.io/#hero">Home</a>
+        <a href="https://aarya1302.github.io/#about">About</a>
+        <a href="https://aarya1302.github.io/#experience">Experience</a>
+        <a href="https://aarya1302.github.io/#projects">Projects</a>
+        <a href="https://aarya1302.github.io/#contact">Contact</a>
+      </div>
+    </nav>
     <div class="container">
       <header class="project-header">
         <h1>Mental Load Application</h1>
@@ -149,8 +194,25 @@
         </div>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">Screenshots</h2>
+      <section class="section screenshot-section">
+        <div class="screenshot">
+          <img
+            src="https://aarya1302.github.io/static/images/ml/home_screen_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img
+            src="https://aarya1302.github.io/static/images/ml/signUp_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
+        <div class="screenshot">
+          <img
+            src="https://aarya1302.github.io/static/images/ml/dashboard_ml.png"
+            alt="Mental Load App Screenshot"
+          />
+        </div>
         <div class="screenshot">
           <img
             src="https://aarya1302.github.io/static/images/ml/checkin_ml.png"
@@ -163,29 +225,12 @@
             alt="Mental Load App Screenshot"
           />
         </div>
+
         <div class="screenshot">
           <img
-            src="https://aarya1302.github.io/static/images/ml/home_screen_ml.png"
-            alt="Mental Load App Screenshot"
-          />
-        </div>
-        <div class="screenshot">
-          <img
-            src="https://aarya1302.github.io/static/images/ml/dashboard_ml.png"
-            alt="Mental Load App Screenshot"
-          />
-        </div>
-        <div class="screenshot">
-          <img
-            src="https://aarya1302.github.io/static/images/ml/images_survey_ml.png"
+            src="https://aarya1302.github.io/static/images/ml/checkin_survey_detailed.png"
             alt="Mental Load App
           Screenshot"
-          />
-        </div>
-        <div class="screenshot">
-          <img
-            src="https://aarya1302.github.io/static/images/ml/signUp_ml.png"
-            alt="Mental Load App Screenshot"
           />
         </div>
       </section>
@@ -227,12 +272,6 @@
             user-centric design. It helps users reflect on and manage their
             mental labor effectively.
           </p>
-          <a
-            href="https://github.com/aarya1302"
-            class="contact-link"
-            target="_blank"
-            >View on GitHub</a
-          >
         </div>
       </section>
     </div>
